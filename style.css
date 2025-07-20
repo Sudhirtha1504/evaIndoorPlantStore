@@ -1,0 +1,104 @@
+
+.header1{
+    display: flex;
+    gap:20px;
+    padding: 10px;
+    background-color: rgb(115, 192, 79);
+}
+nav a{
+    text-decoration: none;
+    color: #000; 
+}
+nav{
+    display: flex;
+    gap: 40px;
+    padding-left: 30%;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.banner img {
+    max-height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.banner-text {
+    position: absolute;
+    top:20%;
+    left: 100px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.custom-rounded {
+    border-radius: 20px;
+    
+
+}
+.footer-colour{
+    background-color: rgb(115, 192, 79);
+}
+
+#plant-list-container {
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 10px;
+}
+.modal-body {
+  overflow: hidden;
+}
+
+.bg-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* Adjust for more/less fade */
+  z-index: 0;
+}
+
+.modal-body .position-relative {
+  z-index: 1;
+}
+.promo-banner {
+  background-color: #fff8dc;
+  
+  color: #202422;
+}
+.variant-section {
+  transition: background-size 300ms ease-out;
+  background-size: 100%;
+   
+}
+.variant-section:hover {
+  background-size: 200%; /* Zoom in slightly */
+}
+
+
+
+
+
+
+
+
+

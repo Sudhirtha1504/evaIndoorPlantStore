@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story - Ray</title>
+  <style>
+    body {
+      background-color: #2d4c3b;
+      color: #dcd977;
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .reverse {
+      grid-template-areas: "image text";
+    }
+
+    .reverse .image-content {
+      grid-area: image;
+    }
+
+    .reverse .text-content {
+      grid-area: text;
+    }
+
+    h2.section-title {
+      color: white;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+
+    .highlight {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .text-content {
+      text-align: left;
+    }
+
+    .image-content {
+      text-align: center;
+    }
+
+    .image-content img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .feature {
+      flex: 1;
+      max-width: 300px;
+      margin: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .feature img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .feature-title {
+      font-weight: bold;
+      color: #dcd977;
+    }
+
+    @media (max-width: 768px) {
+      .section,
+      .reverse {
+        grid-template-columns: 1fr;
+        grid-template-areas: unset;
+      }
+
+      .text-content {
+        text-align: center;
+      }
+    }
+    .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #db6b6b;
+    font-weight: bold;
+  }
+
+  .close-btn:hover {
+    color: #888;
+  }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="close-btn">&times;</a>
+  <!-- Section 1 (Image on Right) -->
+  <div class="section">
+    <div class="text-content">
+      <h2 class="section-title">Our Story</h2>
+      <p class="highlight">Hey there! I'm Siddhant Bhalinge,<br>
+        the Founder and CEO of Ray and I'd love to share our story with you.</p>
+      <p>It's a story of passion, perseverance,<br>
+        and a deep love for nature that's been passed down in my family<br>
+        for three generations.</p>
+    </div>
+    <div class="image-content">
+      <img src="image/Rectangle 95.png" alt="Siddhant Bhalinge" />
+    </div>
+  </div>
+
+  <!-- Section 2 (Image on Left) -->
+  <div class="section reverse">
+    <div class="image-content">
+      <img src="image/Rectangle 95.png" alt="Historic Shop" />
+    </div>
+    <div class="text-content">
+      <p>Our story began with Namdeo Umaji<br>
+        The oldest seed company in India, founded by my great-grandfather in 1885.</p>
+      <p>As a young boy, I spent my days in his Byculla shop,<br>
+        surrounded by the promise of life contained in tiny seeds.<br>
+        Those formative years really were the stepping stones of Ray’s own journey.</p>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="feature">
+      <img src="https://via.placeholder.com/100?text=More+Trees" alt="Innovation" />
+      <div class="feature-title">Innovation</div>
+      <p>Be it our cylinder packaging, self-watering pots, the online ordering experience, or even our R&D, we take pride in innovation and making the plantparenting journey easy and stress-free.</p>
+    </div>
+    <div class="feature">
+      <img src="https://via.placeholder.com/100?text=Plant+Pot" alt="Education" />
+      <div class="feature-title">Education</div>
+      <p>Buying plants can sometimes be overwhelming, especially in the beginning. Through our blog,
+        newsletter, and social channels, we’ve made a conscious effort to educate and inspire customers in
+        their journey.</p>
+    </div>
+    <div class="feature">
+      <img src="https://via.placeholder.com/100?text=Aesthetics" alt="Aesthetics" />
+      <div class="feature-title">Aesthetics</div>
+      <p>Our plants always enhance the space they occupy. We make concerted efforts in not only nurturing our
+        plants in the best way possible, but making them look good too.</p>
+    </div>
+  </div>
+
+</body>
+</html>

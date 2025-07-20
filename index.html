@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Plant Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <section class="header1 d-flex justify-content-between align-items-center p-2">
+            <img src="./image/plant.png" alt="ray" height="20">
+            <span>Ray</span>
+            <input type="search" id="search" placeholder="search">
+            <div>
+                <a href="cart.html">
+                    <img src="./image/addtocart icon.png" alt="addtocart" height="20">
+                </a>
+            </div>
+
+            <img id="profileBtn" src="./image/profile.png" alt="profile" height="20" style="cursor:pointer;">
+        </section>
+
+        <nav class="nav justify-content-center bg-white ">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Best Seller</a>
+            <a class="nav-link" href="#">Deal of the Day</a>
+            <a class="nav-link" href="track.html">Track your Order</a>
+            <a class="nav-link" href="#">Contacts</a>
+            <a class="nav-link" href="about.html">About us</a>
+        </nav>
+
+        <div class="full-width-banner position-relative text-center variant-section">
+            <img src="./image/background1.png" alt="Indoor Plant" class="img-fluid w-100"
+                style="height: 300px; width: auto;">
+            <div class="banner-text position-absolute top-50 start-50 translate-middle text-white fs-2 fw-bold">
+                Indoor Plant
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="row justify-content-center gap-3">
+
+                <div class="col-auto text-center">
+                    <button class="btn bg-transpertant border-0 d-flex flex-column align-items-center p-2"
+                        data-category="XL Indoor Plant">
+                        <img src="./images/Agloanima md.webp" class="rounded-circle" alt="XL Indoor Plant" width="60"
+                            height="60">
+                        <span class="mt-2">XL Indoor Plant</span>
+                    </button>
+                </div>
+
+                <div class="col-auto text-center">
+                    <button class="btn bg-transpertant border-0 d-flex flex-column align-items-center p-2"
+                        data-category="Large Indoor Plant">
+                        <img src="./images/aglonima.webp" class="rounded-circle" alt="Large Indoor Plant" width="60"
+                            height="60">
+                        <span class="mt-2">Large Indoor Plant</span>
+                    </button>
+                </div>
+
+                <div class="col-auto text-center">
+                    <button class="btn bg-transpertant border-0 d-flex flex-column align-items-center p-2"
+                        data-category="Medium Indoor Plant">
+                        <img src="./images/aglonima.webp" class="rounded-circle" alt="Medium Indoor Plant" width="60"
+                            height="60">
+                        <span class="mt-2">Medium Indoor Plant</span>
+                    </button>
+                </div>
+
+                <div class="col-auto text-center">
+                    <button class="btn bg-transpertant border-0 d-flex flex-column align-items-center p-2"
+                        data-category="Small Indoor Plant">
+                        <img src="./images/Aralia pl.webp" class="rounded-circle" alt="Small Indoor Plant" width="60"
+                            height="60">
+                        <span class="mt-2">Small Indoor Plant</span>
+                    </button>
+                </div>
+
+                <div class="col-auto text-center">
+                    <button class="btn bg-transpertant border-0 d-flex flex-column align-items-center p-2"
+                        data-category="Plant Food">
+                        <img src="./images/pot soli.jpg" class="rounded-circle" alt="Plant Food" width="60" height="60">
+                        <span class="mt-2">Plant Food</span>
+                    </button>
+                </div>
+
+                <div class="col-auto text-center">
+                    <button class="btn bg-transpertant border-0 d-flex flex-column align-items-center p-2"
+                        data-category="Plant Care">
+                        <img src="./images/Care kit.jpg" class="rounded-circle" alt="Plant Care" width="60" height="60">
+                        <span class="mt-2">Plant Care</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-4 text-center custom-rounded">
+                <p class="btn btn-success text-white rounded-pill d-flex flex-column align-items-center p-3  w-100 ">
+                    <strong>Get 12% off on order above @1999 </strong>
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+
+        <div id="product-list" class="row">
+          
+                <nav id="pagination" class="mt-4 text-center">
+
+                </nav>
+
+            
+        </div>
+
+      <div id="product-list"></div>
+
+
+    </main>
+    <footer>
+        <footer class="footer-colour py-4">
+            <h4 style="text-align: center;">Shope Online Plant At Place in India</h4>
+            <div class="container">
+                <div class="row text-center text-md-start">
+
+                    <div class="col-md-2 mb-4">
+                        <h4>Home</h4>
+                        <ul class="list-unstyled">
+                            <li>Best Seller</li>
+                            <li>Deal of Day</li>
+                            <li>Track my Order</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 mb-4">
+                        <h4>Category</h4>
+                        <ul class="list-unstyled">
+                            <li>XL Indoor Plant</li>
+                            <li>Large Indoor Plant</li>
+                            <li>Medium Indoor Plant</li>
+                            <li>Small Indoor Plant</li>
+                            <li>Plant Food</li>
+                            <li>Plant Care</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-4">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li>About us</li>
+                            <li>FAQS</li>
+                            <li>Terms & Conditions</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 mb-4">
+                        <h4>Get in Touch</h4>
+                        <p>ABC Street, Kerala</p>
+                        <p>+91 987654321</p>
+                        <p>rayv@gmail.com</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

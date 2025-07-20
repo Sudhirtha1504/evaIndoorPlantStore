@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Shopping Cart</title>
+    <style>
+         .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #db6b6b;
+    font-weight: bold;
+  }
+
+  .close-btn:hover {
+    color: #888;
+  }
+    </style>
+    
+</head>
+
+<body>
+
+    <!-- Close Button -->
+    <a href="index.html" class="close-btn">&times;</a>
+
+    <h1>Shopping Cart (0)</h1>
+
+    <button class="discount-btn">
+        <img src="images/discount.png" alt="Discount icon" width="20" />
+        Apply Discount At the Check Out
+    </button>
+
+    <p>Your Cart Is currently Empty</p>
+
+    <button class="no-savings">No Savings on this order</button>
+    <div>
+        <a href="index.html">
+        <button class="continue-btn">Continue Browsing</button>
+        </a>
+    </div>
+
+
+    <div class="recommendation">
+        <h2>Recommended Product</h2>
+        <div id="product-list" class="product-list">
+            <!-- Products will be inserted here -->
+        </div>
+    </div>
+
+    <p class="footer-note">Damage in Transit Guarantee Replacement at no extra cost</p>
+
+    
+</body>
+
+</html>
