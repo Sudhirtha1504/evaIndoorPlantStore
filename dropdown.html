@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Filter Dropdowns</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .filters {
+      display: flex;
+      gap: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+      width: 150px;
+    }
+
+    .dropdown-toggle {
+      padding: 10px;
+      background-color: white;
+      border: 1px solid #a6aaa5da;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: white;
+      z-index: 1000;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .dropdown-option {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown-option:hover {
+      background-color: green;
+      color: white;
+    }
+
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="filters">
+    <div class="dropdown" onclick="toggleDropdown(this)">
+      <div class="dropdown-toggle">Price</div>
+      <div class="dropdown-menu">
+        <div class="dropdown-option">Below250</div>
+        <div class="dropdown-option">below500</div>
+        <div class="dropdown-option">below1000</div>
+      </div>
+    </div>
+
+    <div class="dropdown" onclick="toggleDropdown(this)">
+      <div class="dropdown-toggle">Size</div>
+      <div class="dropdown-menu">
+        <div class="dropdown-option">Small</div>
+        <div class="dropdown-option">Medium</div>
+        <div class="dropdown-option">Large</div>
+      </div>
+    </div>
+
+    <div class="dropdown" onclick="toggleDropdown(this)">
+      <div class="dropdown-toggle">Sun Light</div>
+      <div class="dropdown-menu">
+        <div class="dropdown-option">Low</div>
+        <div class="dropdown-option">Medium</div>
+        <div class="dropdown-option">High</div>
+      </div>
+    </div>
+
+    <div class="dropdown" onclick="toggleDropdown(this)">
+      <div class="dropdown-toggle">Water Level</div>
+      <div class="dropdown-menu">
+        <div class="dropdown-option">Low</div>
+        <div class="dropdown-option">Medium</div>
+        <div class="dropdown-option">High</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown(element) {
+      // Close all dropdowns first
+      document.querySelectorAll('.dropdown').forEach(drop => {
+        if (drop !== element) {
+          drop.classList.remove('open');
+        }
+      });
+
+      // Toggle current dropdown
+      element.classList.toggle('open');
+    }
+
+    // Close dropdowns on outside click
+    window.addEventListener('click', function(event) {
+      if (!event.target.closest('.dropdown')) {
+        document.querySelectorAll('.dropdown').forEach(drop => {
+          drop.classList.remove('open');
+        });
+      }
+    });
+
+    // Set selected value on click
+    document.querySelectorAll('.dropdown-option').forEach(option => {
+      option.addEventListener('click', function(e) {
+        const dropdown = this.closest('.dropdown');
+        dropdown.querySelector('.dropdown-toggle').textContent = this.textContent;
+        dropdown.classList.remove('open');
+        e.stopPropagation(); // prevent dropdown from reopening
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -87,7 +87,7 @@ nav{
 }
 .variant-section {
   transition: background-size 300ms ease-out;
-  background-size: 100%;
+  background-size: 50%;
    
 }
 .variant-section:hover {

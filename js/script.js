@@ -54,16 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     paginated.forEach((product, index) => {
       const div = document.createElement('div');
-      div.className = 'col-6 col-md-3 col-lg-3 mb-4';
+      div.className = 'col-6 col-md-3 col-lg-3 mb-4 container';
       div.innerHTML = `
-    <div class="card h-100 text-center">
+    <div class="card h-50  text-center">
 <img src="${product.image}" class="card-img-top" alt="${product.name}" style="height: 200px; object-fit: cover; cursor: pointer;" onclick="location.href='imageview.html?id=${product.id}'">
 
       <div class="card-body">
         <h5 class="card-title">${product.name}</h5>
         <p class="card-text">Brand: ${product.brand}</p>
         <p class="card-text fw-bold">Rs. ${product.price}</p>
-        <button class="btn btn-success btn-sm me-2" onclick="addToCart(${product.id}, '${product.category}')">Add to Cart</button>
+        <button class="btn btn-success btn-sm me-2" onclick="addToCart(${product.id}, '${product.category}')">Add to Basket</button>
         <button class="btn btn-outline-danger btn-sm" onclick="wishlist(${product.id})">Wishlist</button>
       </div>
     </div>
@@ -130,11 +130,47 @@ document.getElementById('profileBtn').addEventListener('click', () => {
 });
 
 
-// Dummy handlers
 function addToCart(id, category) {
-  alert(`Product ${id} from ${category} added to cart.`);
+  // Get current cart from localStorage or start with an empty array
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Check if item already exists in cart
+  const existingItem = cart.find(item => item.id === id);
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    cart.push({ id, category, quantity: 1 });
+  }
+
+  // Save back to localStorage
+  localStorage.setItem('cart', JSON.stringify(cart));
+
+  // Update the cart icon
+  updateCartCount();
+
+  alert(`Product ${id} added to cart.`);
 }
+function updateCartCount() {
+  const cartCount = document.getElementById('cart-count');
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Total quantity (not just unique items)
+  const total = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+  cartCount.textContent = total;
+}
+
 
 function wishlist(id) {
   alert(`Product ${id} added to wishlist.`);
 }
+ const buttons = document.querySelectorAll('button[data-category]');
+    const categoryDisplay = document.getElementById('selectedCategory');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            categoryDisplay.textContent = category;
+        });
+    });
+    updateCartCount();
