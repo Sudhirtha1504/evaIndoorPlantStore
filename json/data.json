@@ -9,7 +9,6 @@
                 "price": 280,
                 "stock": 25,
                 "image": "images/bamboo.webp"
-                
             },
             {
                 "id": 2,
@@ -87,6 +86,62 @@
                 "price": 29.99,
                 "stock": 40,
                 "image": "images/oyster.webp"
+            },
+            {
+                "id": 3,
+                "name": "Areca Palm",
+                "brand": "GreenSpace",
+                "price": 560,
+                "stock": 25,
+                "image": "images/Areca md.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Agloanima",
+                "brand": "GreenSpace",
+                "price": 180,
+                "stock": 25,
+                "image": "images/Agloanima md.webp"
+            },
+            {
+                "id": 5,
+                "name": "Calathiya",
+                "brand": "GreenSpace",
+                "price": 390,
+                "stock": 25,
+                "image": "images/Calathiya md.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Bansai",
+                "brand": "GreenSpace",
+                "price": 290,
+                "stock": 25,
+                "image": "images/bansai.webp"
+            },
+            {
+                "id": 7,
+                "name": "china doll",
+                "brand": "GreenSpace",
+                "price": 340,
+                "stock": 25,
+                "image": "images/china doll md.webp"
+            },
+            {
+                "id": 8,
+                "name": "Chamandero",
+                "brand": "GreenSpace",
+                "price": 240,
+                "stock": 25,
+                "image": "images/Chamandero md.webp"
+            },
+            {
+                "id": 9,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
             }
         ]
     },
@@ -94,25 +149,234 @@
         "categories": "Medium Indoor Plant",
         "products": [
             {
-                "id": 3,
+                "id": 2,
                 "name": "Areca Palm",
                 "brand": "LeafyLove",
-                "price": 19.99,
+                "price": 190,
                 "stock": 60,
                 "image": "images/Areca md.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Areca Palm",
+                "brand": "GreenSpace",
+                "price": 560,
+                "stock": 25,
+                "image": "images/Areca md.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Agloanima",
+                "brand": "GreenSpace",
+                "price": 180,
+                "stock": 25,
+                "image": "images/Agloanima md.webp"
+            },
+            {
+                "id": 5,
+                "name": "Calathiya",
+                "brand": "GreenSpace",
+                "price": 390,
+                "stock": 25,
+                "image": "images/Calathiya md.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Bansai",
+                "brand": "GreenSpace",
+                "price": 290,
+                "stock": 25,
+                "image": "images/bansai.webp"
+            },
+            {
+                "id": 7,
+                "name": "china doll",
+                "brand": "GreenSpace",
+                "price": 340,
+                "stock": 25,
+                "image": "images/china doll md.webp"
+            },
+            {
+                "id": 8,
+                "name": "Chamandero",
+                "brand": "GreenSpace",
+                "price": 240,
+                "stock": 25,
+                "image": "images/Chamandero md.webp"
+            },
+            {
+                "id": 9,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 10,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 11,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 12,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 13,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 14,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 15,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 16,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 17,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 18,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 19,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 20,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
+            },
+             {
+                "id": 21,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
             }
+
         ]
     },
     {
         "categories": "Small Indoor Plant",
         "products": [
             {
-                "id": 4,
+                "id": 2,
                 "name": "Succulent Trio",
                 "brand": "MiniGreens",
-                "price": 9.99,
+                "price": 190,
                 "stock": 120,
                 "image": "images/Syngo pl.webp"
+            },
+            {
+                "id": 3,
+                "name": "Areca Palm",
+                "brand": "GreenSpace",
+                "price": 560,
+                "stock": 25,
+                "image": "images/Areca md.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Agloanima",
+                "brand": "GreenSpace",
+                "price": 180,
+                "stock": 25,
+                "image": "images/Agloanima md.webp"
+            },
+            {
+                "id": 5,
+                "name": "Calathiya",
+                "brand": "GreenSpace",
+                "price": 390,
+                "stock": 25,
+                "image": "images/Calathiya md.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Bansai",
+                "brand": "GreenSpace",
+                "price": 290,
+                "stock": 25,
+                "image": "images/bansai.webp"
+            },
+            {
+                "id": 7,
+                "name": "china doll",
+                "brand": "GreenSpace",
+                "price": 340,
+                "stock": 25,
+                "image": "images/china doll md.webp"
+            },
+            {
+                "id": 8,
+                "name": "Chamandero",
+                "brand": "GreenSpace",
+                "price": 240,
+                "stock": 25,
+                "image": "images/Chamandero md.webp"
+            },
+            {
+                "id": 9,
+                "name": "Tall Fiddle Leaf Fig",
+                "brand": "GreenSpace",
+                "price": 250,
+                "stock": 25,
+                "image": "/images/Fidal fig pl.webp"
             }
         ]
     },
@@ -126,6 +390,22 @@
                 "price": 5.99,
                 "stock": 80,
                 "image": "images/neem cake.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Cow Dung",
+                "brand": "PlantCare",
+                "price": 880,
+                "stock": 100,
+                "image": "images/cowdung.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Cocopet",
+                "brand": "PlantCare",
+                "price": 880,
+                "stock": 100,
+                "image": "images/cocopet.webp"
             }
         ]
     },
@@ -156,7 +436,7 @@
                 "stock": 100,
                 "image": "images/cowdung.jpg"
             },
-             {
+            {
                 "id": 4,
                 "name": "Cocopet",
                 "brand": "PlantCare",
@@ -164,7 +444,7 @@
                 "stock": 100,
                 "image": "images/cocopet.webp"
             },
-             {
+            {
                 "id": 5,
                 "name": "Water Globe",
                 "brand": "PlantCare",
@@ -172,7 +452,7 @@
                 "stock": 100,
                 "image": "images/water globe.jpg"
             },
-             {
+            {
                 "id": 6,
                 "name": "Vermicomposit",
                 "brand": "PlantCare",
@@ -180,7 +460,7 @@
                 "stock": 100,
                 "image": "images/vermi.jpg"
             },
-             {
+            {
                 "id": 7,
                 "name": "Plant Straw",
                 "brand": "PlantCare",
@@ -188,7 +468,7 @@
                 "stock": 100,
                 "image": "images/straw.jpg"
             },
-             {
+            {
                 "id": 8,
                 "name": "Water Meter",
                 "brand": "PlantCare",
